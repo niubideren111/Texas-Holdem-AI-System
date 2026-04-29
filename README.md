@@ -11,8 +11,8 @@ This project is a **Texas Hold'em AI system**, designed for building poker bots,
 ## 🧠 AI Performance | AI性能 | AI表現
 
 🔥 Achieves **97%+ win rate** against general players (GG level)  
-🔥 在普通玩家对局中胜率可达 **97%+（GG级别）**  
-🔥 在一般玩家對局中勝率可達 **94%+（GG級別）**  
+🔥 在普通玩家对局中胜率可达 **97%+（GG级别）** 【AI和中高级牌手线下对战数据】 
+🔥 在一般玩家對局中勝率可達 **94%+（GG級別）** 【AI和顶级职业牌手线下对战数据】 
 
 📊 Based on large-scale simulation & self-play training  
 📊 基于大量模拟与自博弈训练  
