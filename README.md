@@ -109,7 +109,7 @@ Can be integrated with:
 
 ### 一键复现结果
 
-```bash
+
 # 克隆仓库
 git clone https://github.com/niubideren111/Texas-Holdem-AI-System.git
 cd Texas-Holdem-AI-System
