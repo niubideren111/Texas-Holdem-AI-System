@@ -1,9 +1,11 @@
 # 🤖 Texas Hold'em AI | Poker AI System | 德州AI源码 | 德州撲克AI系統
 This project is a **Texas Hold'em AI system**, designed for building poker bots, AI opponents, and training environments.
 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/niubideren111/Texas-Holdem-AI-System/actions/workflows/ci.yml/badge.svg)](https://github.com/niubideren111/Texas-Holdem-AI-System/actions/workflows/ci.yml)
 本项目是一套**德州扑克AI系统源码**，可用于构建AI对手、训练系统等。
 
-本專案為**德州撲克AI系統源碼**，可用於AI對戰與訓練。
 > ⚠️ **声明**：本项目仅供**研究和教育目的**使用。不得用于任何形式的真实货币赌博或违反相关平台服务条款的行为。
 
 ## 🧠 AI Performance | AI性能 | AI表現
