@@ -1,4 +1,4 @@
-# 🤖 Texas Hold'em AI | Poker AI System | 德州AI源码 | 德州撲克AI系統|德州最强AI
+# 🤖 Texas Hold'em AI | Poker AI System | 德州AI源码 |德州AI| 德州撲克AI系統|德州最强AI
 This project is a **Texas Hold'em AI system**, designed for building poker bots, AI opponents, and training environments.
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
