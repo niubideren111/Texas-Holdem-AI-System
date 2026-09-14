@@ -1,5 +1,11 @@
-# 🤖 Texas Hold'em AI | Poker AI System | 德州AI源码 |德州AI| 德州撲克AI系統|德州最强AI|德州源码|最强德州AI
-This project is a **Texas Hold'em AI system**, designed for building poker bots, AI opponents, and training environments.
+# 🤖 Texas Hold'em AI | Poker AI System | 德州AI源码｜博弈树、训练脚本|德州源码
+
+
+
+> 德州扑克 AI 源码｜德州AI源码｜面向产品、开发和技术
+
+面向德州扑克策略研究的 AI 代码资料，包含 C++ 博弈树和任务执行类，以及 Python 训练、评估脚本入口。配套图片展示训练配置、对局界面和评估工具，便于讨论实验与工程结构。
+
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -292,17 +298,19 @@ while not done:
 
 ## 📸 Demo | 展示 | 展示
 
-<img width="379" height="447" alt="微信图片_20241030112757" src="https://github.com/user-attachments/assets/72c0f0e3-3cf2-43b7-aaa4-72eaeb333307" />
-![微信图片_20241030103018](https://github.com/user-attachments/assets/9aad6dc7-c1a3-4863-98f9-a1d6d942a17d)
-<img width="1743" height="1121" alt="92FFF1AD24528E37A48A3BDF3BF8DE13" src="https://github.com/user-attachments/assets/e958af02-8d00-41f8-b185-e8f61bbf2d43" />
-
+![德州扑克 AI 训练参数配置截图](docs/assets/seo/texas-holdem-ai-system-01.jpg)
+![德州扑克 AI 项目对局界面展示](docs/assets/seo/texas-holdem-ai-system-02.jpg)
+![原仓库发布的评估工具与曲线截图](docs/assets/seo/texas-holdem-ai-system-03.jpg)
 ---
+## 相关项目
 
-## 📞 Contact | 联系方式 | 聯絡方式
+- [Texas-Holdem-Game-Source-Code](https://github.com/niubideren111/Texas-Holdem-Game-Source-Code)
+- [Texas-Hold-em-Tournament-Source-Code](https://github.com/niubideren111/Texas-Hold-em-Tournament-Source-Code)
 
-* Telegram:TG:@fox_lovemyself
+## 项目咨询
 
----
+- Telegram：[fox_lovemyself](https://t.me/fox_lovemyself)
+- GitHub：[德州扑克 AI 源码](https://github.com/niubideren111/Texas-Holdem-AI-System)
 
 ❓ 常见问题
 Q: 训练速度很慢怎么办？
@@ -346,8 +354,10 @@ Fork 本仓库
 
 详细规范请参阅 CONTRIBUTING.md
 
-📜 许可证
-本项目采用 MIT 许可证 - 详见 LICENSE 文件
+## 许可
+
+请按仓库现有 [LICENSE](LICENSE) 与 [License.md](License.md) 使用公开文件。商业工程、美术资源和完整部署资料的授权范围以书面约定为准。
+
 
 ⚠️ 免责声明
 本项目仅供研究和教育目的使用。
