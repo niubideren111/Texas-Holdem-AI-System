@@ -54,9 +54,7 @@ cd Texas-Holdem-AI-System
 
 ## Questions
 
-### Can the public files reproduce a claimed win rate?
 
-The repository lacks some training modules and complete evaluation data, so no fixed win-rate claim is made.
 
 ### Where should I begin?
 
