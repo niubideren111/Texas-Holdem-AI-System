@@ -1,10 +1,11 @@
-# 🤖 Texas Hold'em AI | Poker AI System | 德州AI源码｜博弈树、训练脚本|德州源码
+# 德州AI源码｜德州扑克AI |博弈树、训练脚本|Texas Hold'em AI | Poker AI System
 
+> 中文简体 · 中文繁體 · English 多语言产品与源码资料
 
-
-> 德州扑克 AI 源码｜德州AI源码｜面向产品、开发和技术
+[简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · [产品页面](https://niubideren111.github.io/Texas-Holdem-AI-System/zh-cn/)
 
 面向德州扑克策略研究的 AI 代码资料，包含 C++ 博弈树和任务执行类，以及 Python 训练、评估脚本入口。配套图片展示训练配置、对局界面和评估工具，便于讨论实验与工程结构。
+
 
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -60,38 +61,6 @@
 
 ---
 
-## 💡 Use Cases | 使用场景 | 使用場景
-
-* Poker AI bot（AI机器人）
-* Poker training tool（训练工具）
-* AI vs AI simulation（AI对战）
-* Online poker AI system（在线AI系统）
-
-👉 Can be extended to real products
-
----
-
-## 🚀 Why This Project | 为什么选择 | 為什麼選擇
-
-* ✔ Combines poker + AI (high-value niche)
-* ✔ Suitable for research & business
-* ✔ Expandable with LLM / ChatGPT
-* ✔ Can simulate real players
-
-👉 Build next-generation poker AI
-
----
-
-## 🤖 AI Extension | AI扩展 | AI擴展
-
-Can be integrated with:
-
-* ChatGPT / LLM
-* AI agents
-* Strategy learning systems
-
-👉 Build AI poker assistant or smart opponent
-
 ---
 
 ## 📦 Tech Stack | 技术架构 | 技術架構
@@ -113,25 +82,46 @@ Can be integrated with:
 
 ---
 
-## 🚀 快速开始
 
-### 一键复现结果
+### 博弈树结构
+
+GameTree.cpp 与 GameTree.hpp 展示节点、行动历史和树构建相关代码。
+
+### 任务执行组织
+
+Task、TaskQueue 和 TaskExecutor 文件可用于阅读计算任务调度结构。
+
+### 训练与评估入口
+
+scriptstrain.py、scriptsevaluate.py 提供命令行入口资料；实验结论应配合完整模型与评估数据。
+
+## 资料阅读与核对方式
+
+1. **先确认产品形态**：依次查看截图和图注，确认产品类型与可见功能流程。
+2. **再核对文件证据**：直接打开下方列出的源码或文档，不只依赖功能描述。
+3. **检查可构建范围**：确认准备运行的部分是否具备依赖、资源、配置和启动脚本。
+4. **确认授权**：阅读仓库许可；商业素材及完整工程交付应另行取得书面授权。
+
+## 产品截图
+
+![德州扑克 AI 训练参数配置截图](docs/assets/seo/texas-holdem-ai-system-01.jpg)
+
+![德州扑克 AI 项目对局界面展示](docs/assets/seo/texas-holdem-ai-system-02.jpg)
+
+![原仓库发布的评估工具与曲线截图](docs/assets/seo/texas-holdem-ai-system-03.jpg)
+
+## 公开源码与资料
+
+| 文件 | 说明 |
+|---|---|
+| [GameTree.cpp](GameTree.cpp) | 博弈树实现 |
+| [GameTree.hpp](GameTree.hpp) | 博弈树与节点定义 |
+| [TaskExecutor.cpp](TaskExecutor.cpp) | 任务执行器 |
+| [scriptstrain.py](scriptstrain.py) | Python 训练脚本入口 |
+| [scriptsevaluate.py](scriptsevaluate.py) | Python 评估脚本入口 |
 
 
-# 克隆仓库
-git clone https://github.com/niubideren111/Texas-Holdem-AI-System.git
-cd Texas-Holdem-AI-System
 
-# 执行一键复现脚本（训练 + 评估）
-chmod +x scripts/reproduce_result.sh
-./scripts/reproduce_result.sh
-运行后，您将看到：
-
-✅ 环境自动配置
-
-✅ 模型训练进度（约30秒）
-
-✅ 评估结果（胜率、平均收益）
 ---
 
 ### 人机对战
@@ -255,42 +245,6 @@ python scripts/minimal_train.py --iterations 500
 python scripts/minimal_evaluate.py --model models/minimal_model.bin --num-games 500
 注意：以上结果为演示性数据，完整训练需要更多迭代和数据。
 
-### 🔧 自定义训练
-修改配置
-编辑 config/default.yaml 文件：
-
-yaml
-game:
-  num_players: 2
-  starting_stack: 1000
-  small_blind: 5
-  big_blind: 10
-
-ai:
-  algorithm: cfr
-  model_path: models/latest.bin
-
-training:
-  iterations: 10000
-  save_interval: 1000
-###自定义游戏规则
-python
-from src.env.poker_env import PokerEnv
-
-# 创建自定义环境
-env = PokerEnv(
-    num_players=3,
-    starting_stack=2000,
-    small_blind=10,
-    big_blind=20
-)
-
-# 运行一局
-obs = env.reset()
-done = False
-while not done:
-    action = your_agent.act(obs)
-    obs, reward, done, info = env.step(action)
 
 
 ---
@@ -307,10 +261,12 @@ while not done:
 - [Texas-Holdem-Game-Source-Code](https://github.com/niubideren111/Texas-Holdem-Game-Source-Code)
 - [Texas-Hold-em-Tournament-Source-Code](https://github.com/niubideren111/Texas-Hold-em-Tournament-Source-Code)
 
-## 项目咨询
+## 资料范围与许可
 
-- Telegram：[fox_lovemyself](https://t.me/fox_lovemyself)
-- GitHub：[德州扑克 AI 源码](https://github.com/niubideren111/Texas-Holdem-AI-System)
+公开脚本引用的部分 src 训练模块未随仓库提供。本页展示代码与实验资料，不声称当前公开文件可一键复现胜率结果。 公开内容以实际文件、依赖和许可为准，不承诺搜索排名、直接上线或固定性能结果。
+
+- Telegram: [@fox_lovemyself](https://t.me/fox_lovemyself)
+- GitHub: [Texas-Holdem-AI-System](https://github.com/niubideren111/Texas-Holdem-AI-System)
 
 ❓ 常见问题
 Q: 训练速度很慢怎么办？
