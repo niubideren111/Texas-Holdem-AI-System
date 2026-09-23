@@ -6,6 +6,64 @@ Poker AI research materials with C++ game-tree and task execution code plus Pyth
 
 **Texas Holdem AI source code · poker AI source code · poker game tree · poker AI training**
 
+## Introduction
+
+This repository contains code references for Texas Holdem AI research, poker-bot match testing and strategy experiments. Public material includes a C++ game tree, Agent and Trainer interfaces, a task queue/executor, Python training and evaluation entry points, and a simplified CFR example. Any “poker assistant” use here means development, offline analysis, simulation and quality assurance, not unauthorized real-time advice in human games.
+
+## Features
+
+| Feature | Public material |
+|---|---|
+| Game-tree modeling | `GameTree.cpp/.hpp` for nodes, action history and tree structure |
+| Agent interface | `Agent.hpp` as an agent abstraction reference |
+| Trainer interface | `Trainer.hpp` for training-task organization |
+| Task execution | `Task`, `TaskQueue` and `TaskExecutor` computation structure |
+| Training entry point | `scriptstrain.py` exposes CFR, PPO and DQN parameters; referenced modules require verification |
+| Evaluation entry point | `scriptsevaluate.py` accepts model, opponent type and game count |
+| Minimal CFR example | `examples/scriptsminimal_train.py` contains readable demonstration logic |
+| Model evaluation example | Minimal script demonstrates random opponents, game counts and return statistics |
+| Project configuration | CMake, Python package metadata, requirements, Docker examples and tests |
+
+## Architecture
+
+```text
+Game state / action history
+          |
+          v
+GameTree + Agent/Trainer
+          |
+          v
+TaskQueue -> TaskExecutor
+          |
+          v
+Training script -> model -> evaluation script
+          |
+          v
+Baselines, game count, returns and logs
+```
+
+| Layer | Components |
+|---|---|
+| Core | C++ game tree, Agent, Trainer and task-execution classes |
+| Experiment | Python training, evaluation and minimal CFR scripts |
+| Configuration | `pyproject.toml`, `setup.py`, `requirements.txt` |
+| Build | `CMakeLists.txt`, `Makefile.mk` and Docker examples |
+| Validation | Examples, sample tests and evaluation-output entry points |
+
+## Advantages
+
+- **C++ and Python separation:** core structures and experiment entry points are easy to study independently.
+- **Separate training and evaluation:** model generation and opponent evaluation use distinct workflows.
+- **Minimal example included:** the CFR demonstration introduces strategy accumulation and action selection.
+- **Explicit evaluation parameters:** model, opponent and game-count inputs support better benchmark design.
+- **Bot testing use cases:** useful for offline simulation, room-filling bot research and server QA.
+
+## Performance and evaluation
+
+The public repository does not include enough complete models, fixed hardware details, raw evaluation logs and training modules to establish a universal win rate or throughput claim. Do not treat claims such as “97% win rate” or “strongest AI” as verified benchmarks.
+
+Record training duration, decision latency (mean/P95/P99), hands per second, opponent type, seed, sample size, win rate, average return, variance, confidence intervals, peak memory and CPU/GPU utilization. Every result should identify the code revision, configuration, model, hardware and raw logs. The minimal CFR example is for education and workflow validation; it is not a performance claim for a full no-limit Texas Holdem solver.
+
 ## What this repository presents
 
 ### Game-tree structure
@@ -54,7 +112,9 @@ cd Texas-Holdem-AI-System
 
 ## Questions
 
+### Can the public files reproduce a claimed win rate?
 
+The repository lacks some training modules and complete evaluation data, so no fixed win-rate claim is made.
 
 ### Where should I begin?
 
