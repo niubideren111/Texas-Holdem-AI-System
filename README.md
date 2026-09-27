@@ -52,6 +52,20 @@ TaskQueue -> TaskExecutor
 | 构建层 | `CMakeLists.txt`、`Makefile.mk`、Docker 示例 |
 | 验证层 | 示例脚本、测试样例和评估结果输出入口 |
 
+```mermaid
+flowchart LR
+  A[牌局状态与行动历史] --> B[GameTree 博弈树]
+  B --> C[Agent 与 Trainer]
+  C --> D[TaskQueue 与 TaskExecutor]
+  D --> E[Python 训练入口]
+  E --> F[模型或策略数据]
+  F --> G[评估脚本]
+  H[随机/CFR 等基线] --> G
+  G --> I[局数、收益、延迟与日志]
+```
+
+公开文件能够证明博弈树、任务执行类和训练/评估入口的存在，但部分脚本引用的训练模块并未随仓库公开。因此，架构图用于说明工程关系，不代表当前文件可以直接复现完整模型或既有胜率。
+
 ## 优势
 
 - **C++ 与 Python 分层**：核心结构和实验入口分开，便于研究工程组织。
@@ -98,11 +112,11 @@ scriptstrain.py、scriptsevaluate.py 提供命令行入口资料；实验结论�
 
 ## 产品截图
 
-![德州扑克 AI 训练参数配置截图](docs/assets/seo/texas-holdem-ai-system-01.jpg)
+| 训练参数配置 | 对局界面展示 |
+|---|---|
+| ![德州扑克 AI 训练参数配置截图](docs/assets/seo/texas-holdem-ai-system-01.jpg) | ![德州扑克 AI 项目对局界面展示](docs/assets/seo/texas-holdem-ai-system-02.jpg) |
 
-![德州扑克 AI 项目对局界面展示](docs/assets/seo/texas-holdem-ai-system-02.jpg)
-
-![原仓库发布的评估工具与曲线截图](docs/assets/seo/texas-holdem-ai-system-03.jpg)
+![德州扑克 AI 评估工具与训练曲线截图](docs/assets/seo/texas-holdem-ai-system-03.jpg)
 
 ## 公开源码与资料
 
@@ -123,6 +137,9 @@ cd Texas-Holdem-AI-System
 
 ## 常见问题
 
+### 公开文件能复现原介绍的胜率吗？
+
+当前缺少部分训练模块与完整评估材料，本页不重复使用 97% 或最强 AI 等未经复现的结论。
 
 ### 从哪里开始阅读 AI 结构？
 
